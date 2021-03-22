@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Pangolin", cursive;
+}
+
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 5rem 0 3rem 0;
+    text-align: center;
+    font-size: 4rem;
+}
+
+header p {
+    font-size: 2rem;
+    transition: all;
+}
+
+.pads {
+    background: lightblue;
+    width: 100%;
+    display: flex;
+}
+
+.pads > div {
+    height: 10rem;
+    width: 10rem;
+    flex: 1;
+}
+
+.pad1 {
+    background: #60d394;
+}
+
+.pad2 {
+    background: #d36060;
+}
+
+.pad3 {
+    background: #c060d3;
+}
+
+.pad4 {
+    background: #d3d168;
+}
+
+.pad5 {
+    background: #6860d3;
+}
+
+.pad6 {
+    background: #60b2d3;
+}
+
+.visual > div {
+    position: absolute;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    bottom: 0;
+    left: 20%;
+    z-index: -1;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+        left: 20%;
+    }
+
+    50% {
+        bottom: 50%;
+        left: 50%;
+    }
+
+    100% {
+        bottom: 0;
+        left: 80%;
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+        color: lightblue;
+    }
+    100% {
+        transform: scale(2);
+        color: lightcoral;
+    }
+}
